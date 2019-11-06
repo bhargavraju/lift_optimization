@@ -67,7 +67,7 @@ def min_energy(n, l, data, k):
             top = lowest_dest
         else:
             lowest_dest = floor_data[1]
-            energy += 2*floor_data[0]-floor_data[1]  # floor_data[0] + (floor_data[0] - floor_data[1])
+            energy += (2*floor_data[0]-floor_data[1])*k  # floor_data[0] + (floor_data[0] - floor_data[1])
             top = lowest_dest
             lifts_used += 1
 
